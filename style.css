@@ -17,12 +17,12 @@ body{
     align-items: center;
     height: 85px;
     justify-content: space-between;
-    position: fixed;
+    position: sticky;
     /* width: 139x;
     margin: 2px 100px; */
     /* transition: 2px ease-in 2s; */
     background-color: #00000057;
-    width: 1349px;
+    width: 100%;
     z-index: 10;
 }
 /* 
@@ -55,7 +55,7 @@ body{
 }
 #navigationbar ul li a{
     display: block;
-    padding: 5px 10px ;
+    padding: 4px 30px ;
     text-decoration: none;
     color: white;
     border-radius: 22px;
@@ -65,11 +65,80 @@ body{
     color: black;
     background-color: white;
     
-}   
+}  
+
+
+/* jnkdzjnkcjnkv */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 45px;
+    border-radius: 15px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    /* margin: 0px 30px; */
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 3px 33px;
+    
+}
+#navbar ul li a{
+    display: block;
+    padding: 4px 10px ;
+    text-decoration: none;
+    color: white;
+    border-radius: 22px;
+    transition: all .2s ease-in  ;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}  
 
 
 
 /* Home */
+/* #home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 525px;
+} */
+
 #home{
     display: flex;
     flex-direction: column;
@@ -96,7 +165,7 @@ body{
     border: 2px solid white;
     height: 250px;
     position: relative;
-    top: 130px;
+    top: 50px;
     padding: 10px 20px;
     background-color: black;
     opacity: .5;
@@ -115,8 +184,52 @@ body{
     position: relative;
     top: 20px;
     left: 140px;
+    display: inline-block;
     
 }
+
+#home::before {    
+    content: "";
+    background: url('bg5.jpg') no-repeat center center/cover ;
+    background-size: cover;
+    position: absolute;
+    /* top: 11110; */
+    height: 110%;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* #cont{
+    border: 2px solid white;
+    height: 250px;
+    position: relative;
+    top: 130px;
+    padding: 10px 20px;
+    background-color: black;
+    opacity: .5;
+    border-radius: 20px;
+}
+#home h1{
+    font-size: 5rem;
+    color: white;
+    font-weight: 60;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    
+}#home p{
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 140px; 
+    text-align: justify;
+    padding-top: 20px;
+    
+} */
 
 
 /* Know Me */
@@ -127,9 +240,9 @@ body{
     position: relative;
     top: 200px;
     border: 2px solid #250000ed;
-    margin: 100px 30px;
+    margin: 100px auto;
     border-radius: 20px;
-    width: 1200px;
+    width: 90%;
     background-color: #eae0d9;
     
 }
@@ -150,7 +263,7 @@ body{
 
 /* My Work */
 
-#projects{
+/* #projects{
     display: flex;
     flex-direction: column;
     margin-top: 60px;
@@ -169,6 +282,7 @@ body{
     
 }
 
+
 .project img{
     height: 414px;
     width: 500px;
@@ -183,17 +297,23 @@ body{
     padding: 10px 10px;
     margin: 10px 10px;
     justify-content: space-between;
+    background-color: rgb(192, 192, 238);
 }
 .project1 img{
-    height: 440px;
+    height: 490px;
 }
 .project1 p{
     border: 2px solid #ffb975;
-    margin: 10px 20px ;
+    margin: top ;
     font-size: 25px;
     padding: 35px 50px ;
     border-radius: 20px;
     background-color: #ffe4ca;
+    height: 300px       ;
+}
+.project1 p{
+    border: 2px solid #ffb975;
+    padding: 30px 30px;
 }
 .project2{
     display: flex;
@@ -226,13 +346,57 @@ body{
     border-radius: 20px;
     background-color: #ffe4ca;
 }  
+.project p{
+    font-size: 22px;
+} */
 
 
+#mywork{
+    position: relative;
+    top: 330px;
+    display: flex;
+    flex-direction: column  ;
+}
+#mywork h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.project{
+    padding: 30px 10px;
+}
+.project img{
+    width: 41%;
+    height: 470px;
+    margin: 20px 30px;
+    border-radius: 30px;
+    
+}
+#project1 img{
+    height: 490px;
+}
+.pro{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* background-color: wheat; */
+    margin: 2px 30px;
+    height: 40%;
+    overflow: hidden;
+}
+.pro p{
+    border: 2px solid green;
+    margin: 20px 30px;
+    /* width: 1000px; */
+    background-color: #ffe4ca;
+    padding: 50px 50px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+}
 
 
 /* Contact Me */
 
-#contactme{
+/* #contactme{
     position: relative;
     top: 450px;
 
@@ -254,6 +418,7 @@ body{
     width: 330px;
     background-color: #001f54;
     border: 2px solid orange;
+    display: flex
 }
 .img{
     height: 110px;
@@ -352,27 +517,137 @@ body{
     position: relative;
     top: 20px;
     font-family: 'Ubuntu', sans-serif;
+} */
+#contactme{
+    position: relative;
+    top: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contactme h1{
+    text-align: center;
+
+}
+.contact{
+    display: flex;
+    margin: 34px;
 }
 
+.contact .box{
+    border: 2px solid orange;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 35px 30px;
+    padding: 20px 20px;
+    width: 330px;
+    background-color: #001f54;
+    height: 210px;
+}
+.contact .box img{
+    height: 115px;
+    border-radius: 100px;
+    transition: all .3s ease-in-out;
+    position: relative;
+    top: 25px;
+}
 
+.contact .box a{
+    padding: 20px 20px;
+    position: relative;
+    top: 20px;
+}
+#phone a{
+    /* padding: 20px 20px; */
+    text-decoration: none;
+    color: orange;
+    z-index: -1;
+    position: relative;
+    transition: all .3s ease-in-out;
+
+}
+#phone:hover  a{
+    z-index: 1;
+    font-size: 20px;
+    position: relative;
+    top: -6px;
+}
+#phone:hover  img{
+    position: relative;
+    top: 0px;
+    height: 130px;
+}
+
+#email a{
+    /* padding: 20px 20px; */
+    text-decoration: none;
+    color: orange;
+    z-index: -1;
+    position: relative;
+    transition: all .3s ease-in-out;
+
+}
+#email:hover  a{
+    z-index: 1;
+    font-size: 20px;
+    position: relative;
+    top: -6px;
+}
+#email:hover  img{
+    position: relative;
+    top: 0px;
+    height: 130px;
+}
+
+#address a{
+    /* padding: 20px 20px; */
+    text-decoration: none;
+    color: orange;
+    z-index: -1;
+    position: relative;
+    transition: all .3s ease-in-out;
+
+}
+#address:hover  a{
+    z-index: 1;
+    font-size: 20px;
+    position: relative;
+    top: -6px;
+}
+#address:hover  img{
+    position: relative;
+    top: 0px;
+    height: 130px;
+}
 
 /* Disclaimer */
 #disclaimer{
     position: relative;
-    top: 100px;
+    top: 480px;
     border: 2px solid;
     background-color: black;
+    width: 100%;
 }
 #disclaimer h1{
     padding: 20px 10px;
     color: white;
     font-size: 30px;
+    display: flex;
+    justify-content: center;
 }
 #disclaimer p{
     text-align: center;
     color: white;
     padding-bottom: 30px;
 }
+
+
+
+
+
+
 
 
 
