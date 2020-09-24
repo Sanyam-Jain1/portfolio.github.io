@@ -7,21 +7,22 @@
     <title>Portfolio Sanyam Jain</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="responsive.css">
 
 </head>
 
 <body>
-    <div id="navigationbar">
-        <div class="logo">
-            <img src="logo3.jpg" alt="" id="logoimg">
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo3.jpg" alt="MyOnlineMeal.com">
         </div>
-        <ul class="tab">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#knowme">Know Me</a></li>
-            <li><a href="#projects">My Work</a></li>
-            <li><a href="#contactme">Contact Me</a></li>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#knowme">Know Me</a></li>
+            <li class="item"><a href="#mywork">My Work</a></li>
+            <li class="item"><a href="#contactme">Contact Me</a></li>
         </ul>
-    </div>
+    </nav>
     <div id="home">
         <div id="cont">
             <h1>Sanyam Jain</h1>
@@ -49,26 +50,26 @@
         </div>
 
     </div>
-    <div id="projects">
+    <div id="mywork">
         <h1>My Work</h1>
         <div class="project">
-            <div class="project1">
+            <div id="project1" class="pro">
                 <p><b>Facial recognition to detect mood and suggest songs accordingly</b><br><br> Human face is an
-                    important part of an individual’s body and it particularly plays a significant role in knowing a
+                    important part of an individual’s body and plays a significant role in knowing a
                     person’s state of mind. This eliminates the dreary and tedious task of manually isolating or
                     grouping songs into various records and helps in generating an appropriate playlist based on an
                     individual’s emotional features.
-                    <!-- People tend to listen to music based on their mood and interests. One can create an application -->
+                    One can create an application
                     to
                     suggest songs for users based on their mood by capturing facial expressions.<a
-                        href="https://nordicapis.com/20-emotion-recognition-apis-that-will-leave-you-impressed-and-concerned/"
+                    href="https://nordicapis.com/20-emotion-recognition-apis-that-will-leave-you-impressed-and-concerned/"
                         id="link" target="_blank">Explore more</a></p>
+                        <img src="pro1.png" alt="">
 
-                <img src="pro1.png" alt="">
-            </div>
+                    </div>
         </div>
         <div class="project">
-            <div class="project2">
+            <div id="project2" class="pro">
                 <p><b>Finding out habitable exo-planet from images captured by space vehicles like
                         Kepler</b><br><br>In
                     the
@@ -87,7 +88,7 @@
             </div>
         </div>
         <div class="project">
-            <div class="project3">
+            <div id="project3" class="pro">
                 <p><b>Handwritten equation solver using CNN</b><br><br>Among all the issues, handwritten mathematical
                     expression recognition is one of the confounding issues in the region of computer vision research.
                     You
@@ -107,21 +108,30 @@
     <div id="contactme">
         <h1>Contact Me</h1>
         <div class="contact">
-            <div id="phone" class="box">
-                <img src="phone5.png" alt="" class="img">
-                <a href="javascript:void(0)" class="text">+91 9999999999
-                </a> </div>
-            <div id="email" class="box">
-                <img src="email2.png" alt="" class="img">
-                <a href="javascript:void(0)" class="text">abc@gmail.com
-                </a> </div>
-            <div class="box" id="address">
-                <img src="address.png" alt="" class="img">
-                <a href="javascript:void(0)" class="text">India, New Delhi</a>
+            <div id="phone">
+                <div class="box">
+                    <img src="phone5.png" alt="" class="img">
+                    <a href="javascript:void(0)" class="text">+91 9999999999
+                    </a> </div>
+            </div>
+            <div id="email">
+                <div class="box">
+                    <img src="email2.png" alt="" class="img">
+                    <a href="javascript:void(0)" class="text">abc@gmail.com
+                    </a> </div>
+            </div>
+            <div id="address">
+                <div class="box">
+                    <img src="address.png" alt="" class="img">
+                    <a href="javascript:void(0)" class="text">India, New Delhi</a>
+                </div>
             </div>
         </div>
+    </div>
 
     <div id="disclaimer">
         <h1>Disclaimer</h1>
-        <p>This is a fictious website made for a project.<br>Any assets including pictures, videos etc. have been taken online for academic purposes only.<br>This website has been designed and developed by Sanyam Jain (Student of class 9-C, Delhi Public School, Rohini)</p>
-    </div>    
+        <p>This is a fictious website made for a project.<br>Any assets including pictures, videos etc. have been
+            taken online for academic purposes only.<br>This website has been designed and developed by Sanyam Jain
+            (Student of class 9-C, Delhi Public School, Rohini)</p>
+    </div>
