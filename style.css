@@ -210,7 +210,7 @@ body{
 /* Contact Me */
 #contactme{
     position: relative;
-    top: 400px;
+    top: 310px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -313,7 +313,7 @@ body{
 /* Disclaimer */
 #disclaimer{
     position: relative;
-    top: 480px;
+    top: 90px;
     border: 2px solid;
     background-color: black;
     width: 100%;
