@@ -104,9 +104,9 @@ body{
     color: white;
     position: relative;
     top: 20px;
-    display: flex;
+    display: inline-block;
+    left: 120px;
     text-align: center;
-    justify-content: center;
     
 }
 
@@ -115,7 +115,6 @@ body{
     background: url('bg.jpg') no-repeat center center/cover ;
     background-size: cover;
     position: absolute;
-    /* top: 11110; */
     height: 110%;
     right: 0px;
     bottom: 0px;
