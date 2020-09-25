@@ -120,19 +120,6 @@ body{
     
 }
 
-#home::before {    
-    content: "";
-    background: url('bg5.jpg') no-repeat center center/cover ;
-    background-size: cover;
-    position: absolute;
-    /* top: 11110; */
-    height: 110%;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.7;
-    z-index: -1;
-}
 
 
 
